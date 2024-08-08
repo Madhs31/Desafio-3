@@ -1,0 +1,221 @@
+{% extends 'base.html' %}
+
+{% block title %}Formulário{% endblock %}
+
+{% block styles %}
+<style>
+    body {
+        justify-content: space-around;
+        margin: 0%;
+        margin-bottom: 0%;
+        font-family: "Alatsi", sans-serif;
+        background-color: #c8c8c8;
+        overflow-x: hidden;
+    }
+
+    .divtext {
+        margin-top: -3pc;
+        margin-left: 100px;
+        margin-right: 100px;
+        text-align: justify;
+    }
+    .funcoes {
+        margin-top: 6pc;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 80px;
+        text-align: justify;
+    }
+    .h3 {
+        line-height: 1.5;
+        text-indent: 20px;
+    }
+    p {
+        line-height: 1.5;
+        text-indent: 50px;
+    }
+    .pp {
+        line-height: 1.5;
+        text-indent: 80px;
+    }
+    .pp2 {
+        line-height: 1.5;
+        text-indent: 100px;
+    }
+    .ppp {
+        line-height: 1.5;
+        text-indent: 120px;
+    }
+    .ppp2 {
+        line-height: 1.5;
+        text-indent: 140px;
+    }
+    .imag {
+        width: 45%;
+        height: 45%;
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+    .cardcard {
+        box-shadow: 0 4px 8px 0 #1c1e21;
+        transition: 0.3s;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .cardcard:hover {
+        box-shadow: 0 8px 16px 0 #1c1e21;
+    }
+    .containercard {
+        background-color: #32363f;
+        padding: 2px 16px;
+    }
+    .navigation-btn {
+        background-color: transparent; 
+        border: none; 
+        color: #32363f;  
+        font-size: 1.25rem; 
+    }
+    .navigation-btn:hover {
+        transition: 250ms;
+        transform: scale(1.05);
+        background-color: transparent; 
+        border: none; 
+        color: #32363f;  
+        font-size: 1.25rem; 
+    }
+    #sidebar {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    #main-content {
+        overflow-y: auto;
+        padding-left: 15px;
+    }
+
+    .divimag{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container-custom{
+        height: 50vh;
+        background-color: #32363f;
+    }
+    .title-mod{
+        margin: 30px 50px;
+        color: #D6D6D6;                
+    }
+    .title-mod h1{
+        font-size: 120px;
+    }
+
+    .img{
+        width: 500px;
+        height: auto;
+    }
+
+    .titulo{
+        margin-top: 90px;
+    }
+
+    hr {
+        border: 1px solid #000; /* Linha preta, pode ajustar a cor */
+        margin: 20px 0; /* Margem superior e inferior */
+    }
+
+    @media (max-width:575.98px){
+        .title-mod h1{
+            font-size: 40px;
+        }
+        .img{
+            width: 335px;
+            height: auto;
+        }
+        .imag{
+            width: 290px;
+            height: auto;
+        }
+        #main-content .divtext{
+            margin-right:8px;
+            margin-left: 20px;
+        }
+        hr{
+            display: none;
+        }
+        .titulo{
+            margin-top: 0
+        }
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px){
+        .img{
+            width: 350px;
+            height: auto;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px){
+        .img{
+            width: 400px;
+            height: auto;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1224.98px){
+        .img{
+            width: 400px;
+            height: auto;
+        }
+    }
+    .table {
+        border-radius: 15px;
+        overflow: hidden;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid container-custom position-relative">
+    <div class="row">
+        <div class="col-lg-6 col-md-12 text-center text-lg-start mb-4 mb-lg-0 titulo">
+            <div class="title-mod">
+                <h1>Formulário</h1>
+                <br>
+                <h2>Veja os feedbacks dos usuários.</h2>
+            </div>
+        </div>  
+    </div>
+</div>
+        <div class="wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+        </div>
+<div class="container">
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Nota</th>
+                    <th>Opinião</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for exam in exams %}
+                <tr>
+                    <td>{{ exam[2] }}</td> <!-- nota -->
+                    <td>{{ exam[3] }}</td> <!-- opiniao -->
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <br>
+</div>
+{% endblock %}
+

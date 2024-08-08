@@ -1,0 +1,321 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="liader"></div>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+  <nav class="navbar navbar-expand-sm navbar-dark  fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="{{ url_for('static', filename='/elementos.png') }}" class="imghelme">
+    </a>
+    <div class="container-fluid"></div>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#section2">Sobre</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section3">Personagens</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section4">Enredo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section5">Ordem</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section6">Avaliação</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+      <img  src="{{ url_for('static', filename='/avatar121.jpg') }}" class="img0" class="d-block" class="img-fluid" style="width:1550px; height: 680px ;">
+<div id="section2" class="container-fluid bg-transparent text-white" style="padding:200px 10px;">
+  <h1 class="pp"><font color="black">Sobre</font></h1>
+    <div> 
+      <img src="/static/sc.gif" id="gif" alt="Animation" class="gif">
+  </div>
+  <div class="divin" id="texto">
+  <font color="black">Avatar se passa em um Mundo de Avatar fictício influenciado por artes marciais, especialmente kung fu misturado com magia relacionada com os quatro elementos e mitologia chinesa. O resultado foi uma mistura de elementos asiáticos, especialmente das culturas japonesa e chinesa, bem como ao nível do estilo anime e elementos de desenhos norte-americanos.</font></p>
+
+  <font color="black">A série conta as aventuras de Aang, o então sucessor de uma longa linhagem de avatares. Ele e seus amigos Katara, Sokka, e mais tarde Toph Beifong, têm a missão de salvar o mundo dos ataques da Nação do Fogo, que tem como objetivo o domínio de todo o mundo.</font></p>
+    
+  <font color="black"> A série encontra-se estruturada sob a forma de "livros", onde cada episódio é um "capítulo" e cada temporada um "livro" diferente. A sua estreia foi planejada para novembro de 2004, mas foi transmitida pela primeira vez no dia 21 de fevereiro de 2005 no canal Nickelodeon dos Estados Unidos da América. O último episódio da série foi exibido a 19 de julho de 2008.</font></p>
+    
+  <font color="black">Em 1º de julho de 2010 foi lançado nos Estados Unidos, um filme baseado na Primeira Temporada da série animada pela Paramount Pictures e Nickelodeon Movies, chamado O Último Mestre do Ar. O filme estreou Brasil no dia 20 de agosto e em Portugal no dia 12 de agosto.</font></p>
+  </div>
+</div>
+<div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 10px;">
+  <h1 class="pp"><font color="white"> Personagens Principais </font></h1>
+  <br>
+  <br>
+  <br>
+    <div class="helpme">
+    <div class="wrapper">
+      <div class="card front-face">
+          <img src="{{ url_for('static', filename='/aang_icon.jpg') }}">
+      </div>
+      <div class="card back-face">
+          <img src="{{ url_for('static', filename='/aang_icon2.jpg') }}">
+          <div class="info">
+              <div class="title">
+                  Aang</div>
+              <br>
+               Aang foi um Nômade do Ar nascido em 12 BG e o Avatar durante a Guerra dos Cem Anos
+          </div>
+      </div>
+  </div>
+  
+  <div class="wrapper">
+    <div class="card front-face">
+        <img src="{{ url_for('static', filename='/zuko_icon2.jpg') }}">
+    </div>
+    <div class="card back-face">
+        <img src="{{ url_for('static', filename='/zuko_icon.jpg') }}">
+        <div class="info">
+            <div class="title">
+                Zuko</div>
+                <br>
+             Zuko é um poderoso dobrador de fogo, nascido como um príncipe na Família Real da Nação do Fogo 
+          </div>
+        </div>
+    </div>
+    
+
+    <div class="wrapper">
+      <div class="card front-face">
+          <img src="{{ url_for('static', filename='/katara_icon.jpg') }}">
+      </div>
+      <div class="card back-face">
+          <img src="{{ url_for('static', filename='/katara_icon2.jpg') }}">
+          <div class="info">
+              <div class="title">
+          Katara</div>
+          <br>
+      Katara é uma mestra de dominação de água, nascida na Tribo da Água do Sul, filha do Chefe Hakoda e sua esposa Kya. Durante sua infância, ela foi a única dobradora de água que vivia na Tribo da Água do Sul. 
+    </div>
+  </div>
+</div>
+
+
+<div class="wrapper">
+  <div class="card front-face">
+      <img src="{{ url_for('static', filename='/toph_icon.jpg') }}">
+  </div>
+  <div class="card back-face">
+      <img src="{{ url_for('static', filename='/toph_icon2.jpg') }}">
+      <div class="info">
+          <div class="title">
+          Toph</div>
+          <br>
+      Toph Beifong, também conhecida como Toph, é uma mestre de Dobra de Terra, uma das mais poderosas de seu tempo, e a descobridora da Dobra de Metal. </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="wrapper">
+  <div class="card front-face">
+      <img src="{{ url_for('static', filename='/sokka_icon.jpg') }}">
+  </div>
+  <div class="card back-face">
+      <img src="{{ url_for('static', filename='/sokka_icon2.jpg') }}">
+      <div class="info">
+          <div class="title">
+          Sokka</div>
+      Sokka é um guerreiro que nasceu e cresceu na Tribo da Água do Sul criado por sua avó Kanna, ele viveu uma vida de um adolescente normal em sua tribo até que ele e sua irmã Katara 
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="card front-face">
+      <img src="{{ url_for('static', filename='/appa_icon.jpg') }}">
+  </div>
+  <div class="card back-face">
+      <img src="{{ url_for('static', filename='/appa_icon2.jpg') }}">
+      <div class="info">
+          <div class="title">
+          Appa</div>
+          <br>
+       Appa é o fiel Bisão Voador pertencente a Aang
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<br>
+<div id="section4" class="container-fluid bg-secondary text-white">
+  <img src="{{ url_for('static', filename='/Avatar2.jpg') }}" class="img0" class="d-block" class="img-fluid" style="width:1540px; height: 890px; top: 100px">
+  </div>
+
+
+<div id="section5" class="container-fluid bg-secondary text-white" style="padding:100px 10px;">
+<!-- carousel -->
+<div class="carousel">
+  <!-- list item -->
+  <div class="list">
+    <div class="item">
+      <img src="{{ url_for('static', filename='/tribo da agua.jpg') }}"/>
+      <div class="content">
+        <div class="title">Livro Um: Água</div>
+        <br>
+        <br>
+        <div class="des">
+          Aang e Appa são acordados por dois irmãos da Tribo da Água do Sul, Katara e Sokka. Aang descobre que a Nação do Fogo começou uma guerra de cem anos antes, logo após o seu desaparecimento. A primeira atitude da Nação do Fogo em sua campanha para a conquista global foi o de lançar um ataque genocida sobre os Nômades do Ar, que levaram toda a raça de Aang à extinção, fazendo-o ser o último dominador de ar vivo. Ele percebe que ele deve cumprir o seu destino de se tornar um Avatar plenamente realizado e restaurar o equilíbrio para o mundo derrotando a Nação do Fogo. Aang se propõe a dominar os três elementos restantes: água, terra e fogo. Com Katara e Sokka, Aang decide ir primeiro ao Polo Norte para encontrar um mestre dobra d'água. Aang descobre logo que Cometa Sozin, que o Senhor do Fogo Sozin usou como uma fonte de alimentação para iniciar a Guerra dos Cem Anos, voltará no próximo verão, dando o poder suficiente Nação do Fogo para finalmente alcançar a vitória. Aang percebe que ele deve dominar todos os quatro elementos e acabar com a guerra antes deste tempo. Para a maioria de sua viagem para o Polo Norte, o grupo é perseguido por Zuko, um príncipe banido da Nação do Fogo pelo seu pai Ozai, que é obcecado por capturar Aang para restaurar sua honra perdida.
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="{{ url_for('static', filename='/reino da terra.jpg') }}"/>
+      <div class="content">
+        <div class="title">Livro 2: Terra</div>
+        <br>
+        <br>
+        <div class="des">
+          Depois de deixar o Polo Norte e conseguir dominar a água, Aang viaja para o Reino da Terra para dominar a dobra de terra. Lá, o grupo conhece Toph, um prodígio dobra de terra que se torna a professora de Aang. Os heróis descobrem informações sobre um próximo eclipse solar que deixaria a Nação do Fogo impotente e aberta à invasão. Eles lutam para alcançar o Rei da Terra com esta informação vital, mas são desviados por sequestro de Appa. Zuko, psicologicamente instável, Azula, sua irmã, e suas duas amigas Mai e Ty Lee perseguem o grupo enquanto eles lutam para chegar a Ba Sing Se. Homens ligados à Azula dão um golpe que derruba o Rei da Terra e destrói qualquer esperança de uma invasão em larga escala a Nação do Fogo.
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="{{ url_for('static', filename='/nação do fogo.jpg') }}"/>
+      <div class="content">
+        <div class="title">Livro Três: Fogo</div>
+        <br>
+        <br>
+        <div class="des">
+          O grupo se recupera da queda de Ba Sing Se e viaja para o local da invasão planejada. No dia do eclipse solar, o grupo de Aang e mais outros guerreiros lançam uma invasão menor, o que acaba por falhar. Zuko confronta seu pai e as atitudes da Nação do Fogo. Após uma série de eventos, ele consegue ganhar a confiança dos protagonistas e torna-se professor dobra de fogo de Aang. Aang e Zuko descobrem os verdadeiros segredos de domar o fogo dos antigos Guerreiros do Sol; Sokka e Zuko depois viajam para uma prisão na Nação do Fogo chamado de Boiling Rock para resgatar o pai de Suki, um guerreiro da Ilha Kyoshi. No dia do Cometa de Sozin, o Senhor do Fogo Ozai aproveita o incrível poder e energia do cometa para começar uma campanha genocida para destruir o resto do mundo. Aang e seus amigos se separaram para enfrentar o auto-proclamado Rei Fênix Ozai e também Azula (prestes a ser coroado como a nova Senhora do Fogo). Aang enfrenta e derrota Ozai. Zuko e Katara derrotam Azula antes de sua coroação. Sokka, Toph, e Suki destroem a frota aérea. Zuko se torna o novo Senhor do Fogo e promete ajudar o mundo a se reconstruir a partir de cem anos de guerra e sofrimento.
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- list thumnail -->
+  <div class="thumbnail">
+    <div class="item">
+      <img src="{{ url_for('static', filename='/Avatar_Book_1.jpg') }}"/>
+      <div class="content">
+    </div>
+    </div>
+    <div class="item">
+      <img src="{{ url_for('static', filename='/Avatar_Book_2.png') }}"/>
+      <div class="content">
+        </div>
+    </div>
+    <div class="item">
+      <img src="{{ url_for('static', filename='/Avatar_Book_3.jpg') }}"/>
+      <div class="content">
+    </div>
+    </div>
+  </div>
+  <!-- next prev -->
+
+  <div class="arrows">
+    <button id="prev"></button>
+    <button id="next"></button>
+  </div>
+  <!-- time running -->
+  <div class="time"></div>
+</div>
+</div>
+</div>
+
+<div id="section6" class="container-fluid bg-transparent text-white" style="padding:160px 10px;">
+<!-- Botão para abrir o modal -->
+<div class="cardcard">
+  <div class="containercard formcard" class="rounded">
+      <br>
+      <img id="top" src="{{ url_for('static', filename='/Toph.png') }}" >
+      <div class="texst">
+          <h4><font color="#32363F">Responda nossa pesquisa de satisfação!</font></h4>
+          <p style="margin-left: -40px;line-height: 0.4; "><strong><font color="#32363F">Nós queremos saber a sua opinião!</font></strong></P>
+          <p style="margin-left: -40px;line-height: 0.4;">Clique no botão a seguir e responda o formulário.</P>
+      </div>
+      <div class="butone">
+          <button type="button" class="btn btn-lg btn-dark" data-toggle="modal" data-target="#formModal" >
+              ACESSAR FORMULÁRIO
+          </button>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+      </div>
+      <br>
+  </div>
+</div>
+<br>
+<div class="pesquisa">
+
+<button type="button" class="btn navigation-btn" data-toggle="modal" data-target="#passwordModal">
+  Acessar respostas
+</button>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<!-- Modal Avaliação -->
+<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="formModalLabel"><font color='black'>Pesquisa de Satisfação</font></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+                  <div class="mb-3">
+                      <label for="satisfacao" class="form-label"><font color='black'>De 0 a 5 (sendo 5 a maior nota) o quão satisfeito você está com o site?</font></label>
+                      <div class="rating">
+                          <input type="radio" name="nota" id="rating-1" value="5"><label for="rating-1" required>★</label>
+                          <input type="radio" name="nota" id="rating-2" value="4"><label for="rating-2" required>★</label>
+                          <input type="radio" name="nota" id="rating-3" value="3"><label for="rating-3" required>★</label>
+                          <input type="radio" name="nota" id="rating-4" value="2"><label for="rating-4" required>★</label>
+                          <input type="radio" name="nota" id="rating-5" value="1"><label for="rating-5" required>★</label>
+                      </div>
+                  </div>
+                  <div class="mb-3">
+                      <label for="experiencia" class="form-label"><font color='black'>Compartilhe sua experiência para continuarmos aprimorando nosso conteúdo e oferecer a melhor experiência possível.</font></label>
+                      <textarea class="form-control" id="experiencia" rows="3" name="opiniao" required></textarea>
+                  </div>
+              </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+      </div>
+      </div>
+  </div>
+</div>
+
+<!-- Modal Senha -->
+<div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="passwordModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="passwordModalLabel"><font color='black'>Inserir Senha</font></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <form action="{{ url_for('validate_password') }}" method="POST">
+                  <div class="form-group">
+                      <label for="password"><font color='black'>Senha:</font></label>
+                      <input type="password" class="form-control" id="password" name="password" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+<br>
+<br>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+{% endblock %}
+
+
